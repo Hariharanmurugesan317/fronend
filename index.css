@@ -1,0 +1,428 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.container nav {
+    display: flex;
+    background-color: rgba(13, 19, 19, 0.658);
+    height: 60px;
+    
+}
+.container ul li a {
+  color: white;
+  font-weight: lighter;
+}
+
+.container .logo {
+    font-size: 29px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(252, 250, 250);
+    font-family: fantasy;
+    
+}
+.container nav ul li a button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aqua;
+    color: black;
+   
+}
+
+.container nav ul li a button:hover {
+    background-color: rgb(28, 227, 78);
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    left: 700px;
+    gap: 40px;
+    list-style: none;
+    top: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color:yellow;
+}
+@media screen and (max-width: 768px) {
+  .container nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .container .logo {
+    margin: 5px 0 10px 10px;
+    font-size: 24px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: static;
+    gap: 15px;
+    padding-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .container nav ul li a button {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+/* 2page */
+.king {
+    background-image: url(./img/hero-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.king h2 {
+    margin-left: 60px;
+    color: rgb(227, 198, 143);
+    font-family: "Kapakana", cursive;
+    padding-top: 200px;
+    word-spacing: 10px;
+    font-size: 46px;
+    text-shadow: 0px 5px 10px rgba(6, 6, 239, 0.784),
+        0px 5px 10px white,
+        0px 5px 10px rgb(244, 126, 126),
+        0px 5px 10px rgb(61, 203, 234),
+        0px 5px 10px yellow;
+
+}
+.king p{
+  color: azure;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.king button {
+    margin-left: 80px;
+    margin-top: 30px;
+    background-color: tomato;
+    color: wheat;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    height: 45px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.king button:hover {
+    background-color: tomato;
+    color: whitesmoke;
+    box-shadow: 0px 0px 12px 5px white;
+}
+@media screen and (max-width: 768px) {
+  .king {
+    background-position: center;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .king h2 {
+    font-size: 30px;
+    margin-left: 20px;
+    padding-top: 100px;
+    word-spacing: 5px;
+    text-align: center;
+  }
+
+  .king p {
+    font-size: 16px;
+    margin: 20px auto 0;
+    text-align: center;
+    width: 90%;
+  }
+
+  .king button {
+    margin: 20px auto 0;
+    display: block;
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+
+
+/* 3 */
+
+.product-head {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    font-family: "Alex Brush", cursive;
+    font-weight: 800;
+    color: rgb(7, 7, 7);
+}
+.hari ul {
+  margin-left: 500px;
+  margin-top: 20px;
+  gap: 40px;
+  font-size: 20px;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(21, 9, 9);
+}
+.hari ul a{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color:#333446;
+    color: white;
+}
+.hari ul :hover{
+    background-color: aqua;
+    color: red;
+}
+.msh04{
+   display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    gap: 5px;
+
+}
+.product-images {
+    padding: 40px;
+    margin-top: 30px;
+    height: 60vh;
+    width: 30%;
+    margin-left: 10px;
+    background-color: white;
+}
+.product-images img {
+    width: 100%;
+    height: 30vh;
+}
+.product-images h3 p{
+    background-color: rgb(63, 87, 248);
+    color: azure;
+}
+@media screen and (max-width: 768px) {
+  .product-head {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+
+  .hari ul {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 10px;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .hari ul a {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .msh04 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .product-images {
+    width: 90%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .product-images img {
+    height: auto;
+  }
+
+  .product-images h3,
+  .product-images p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* 4 */
+.about-1{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 28, 62);
+}
+.about-1 img{
+    width: 700px;
+    height: 80vh;
+    margin-top: 50px;
+}
+.about-1 h2{
+     text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    color: white;
+    margin-top:-500px;
+    margin-left: 550px;
+    font-family: "Alex Brush", cursive;
+    font-weight: 800;
+}
+.about-1 p{
+    font-size: 22px;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-left: 780px;
+}
+@media screen and (max-width: 768px) {
+  .about-1 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .about-1 img {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .about-1 h2 {
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 36px;
+    margin-left: 0;
+    padding-top: 10px;
+  }
+
+  .about-1 p {
+    font-size: 18px;
+    margin: 20px auto 0;
+    text-align: center;
+    margin-left: 0;
+    width: 90%;
+  }
+}
+
+/* 5 */
+.book-2 h2{
+    margin-top: 30px;
+    margin-left: 250px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 30px;
+}
+.book-1 {
+  width: 600px;
+  margin-left: 50px ;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+}
+
+.book-1 input[type="text"] {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid whitesmoke;
+  border-radius: 6px;
+  outline: none;
+}
+.book-1 a button{
+    text-align: center;
+    margin-left: 40%;
+    height: 30px;
+    width: 100px;
+    background-color: tomato;
+    color: white;
+}
+
+.map{
+    margin-left: 800px;
+    margin-top: -390px;
+}
+
+@media screen and (max-width: 768px) {
+  .book-2 h2 {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+
+  .book-1 {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .book-1 input[type="text"] {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .book-1 a button {
+    margin-left: 30%;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  /* .map {
+    margin: 30px ;
+    margin-top: 20px;
+    width: 90%;
+    position: static;
+  } */
+   @media (max-width: 768px) {
+  .map {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+}
+/* foot */
+footer {
+  background-color: #222;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+footer p {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 15px;
+  }
+}
